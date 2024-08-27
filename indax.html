@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MedicalCare</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+                <li><a href="#" onclick="navigateTo('services')">Services</a></li>
+                <li><a href="#" onclick="navigateTo('about')">About Us</a></li>
+                <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Health, Our Priority</h1>
+            <p>We provide the best medical services to ensure your well-being.</p>
+            <button onclick="showModal()">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a leading medical care provider, dedicated to offering top-notch health services.</p>
+        <div class="read-more">
+            <p id="more-text" class="hidden">Our team of experienced professionals is committed to ensuring the highest standards of care. We believe in personalized treatment plans to suit the needs of each patient.</p>
+            <button onclick="toggleReadMore()">Read More</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item" onclick="toggleServiceDetails('general')">
+            <h3>General Checkup</h3>
+            <p>Regular health checkups to keep you in good shape.</p>
+            <div id="general" class="service-details hidden">
+                <p>Our general checkup includes a comprehensive examination, blood tests, and personalized advice.</p>
+            </div>
+        </div>
+        <div class="service-item" onclick="toggleServiceDetails('specialist')">
+            <h3>Specialist Consultation</h3>
+            <p>Expert advice from our team of specialists.</p>
+            <div id="specialist" class="service-details hidden">
+                <p>Consult with our specialists across various fields, including cardiology, neurology, and more.</p>
+            </div>
+        </div>
+        <div class="service-item" onclick="toggleServiceDetails('emergency')">
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency services for critical care.</p>
+            <div id="emergency" class="service-details hidden">
+                <p>Our emergency care unit is equipped with state-of-the-art technology to handle any crisis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MedicalCare. All rights reserved.</p>
+    </footer>
+
+   
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

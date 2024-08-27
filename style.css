@@ -1,0 +1,163 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-image: url(https://img.freepik.com/https://img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61802.jpg?size=626&ext=jpg-photo/heart-patient_693425-28088.jpg);
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('https://img.freepik.com/premium-photo/blur-image-background-hospital-clinic-image_1075189-17991.jpg?size=626&ext=jpg') no-repeat center center/cover;
+    height: 80vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #e8491d;
+    border: none;
+    cursor: pointer;
+}
+
+.about, .services, .contact {
+    padding: 40px 20px;
+    background: url('https://img.freepik.com/premium-photo/light-blur-luxury-hospital-corridor-ward-blurred-background-clinic-interior-with-defocus-effect-health-care-medical-concept-ai-generated-image_1073235-5944.jpg?ga=GA1.1.220189043.1724307778&semt=ais_hybrid') no-repeat center center/cover;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.services {
+    background: url('https://img.freepik.com/free-photo/blurred-abstract-background-interior-view-looking-out-toward-empty-office-lobby-entrance-doors-glass-curtain-wall-with-frame_1339-6352.jpg?ga=GA1.1.220189043.1724307778&semt=ais_hybrid') no-repeat center center/cover;
+
+}
+
+.service-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-details {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e2e2e2;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Contact Form Styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #e8491d;
+    border: none;
+    cursor: pointer;
+}
